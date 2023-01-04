@@ -1,3 +1,13 @@
+//Scroll to top
+
+const scrollTop = document.querySelector("#scroll-to-top");
+
+scrollTop.addEventListener("click", function () {
+  window.scrollTo(0, 0);
+});
+
+//FAQ
+
 const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach((faq) => {
