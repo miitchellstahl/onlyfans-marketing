@@ -705,6 +705,10 @@ color: var(--light-blue);
 
 }
 @media only screen and (max-width: 600px) {
+.heading-wrapper img{
+    display: none;
+}
+
     #contact-heading{
         font-size: 70px;
     }
