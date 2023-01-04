@@ -1,3 +1,5 @@
+history.scrollRestoration = "manual";
+
 //Scroll to top
 
 const scrollTop = document.querySelector("#scroll-to-top");
