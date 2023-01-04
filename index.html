@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -101,7 +102,7 @@
       </div>
 
       <div class="strategy-grid container">
-        <div class="strategy-item shadow">
+        <div class="strategy-item shadow" data-aos="flip-up">
           <div class="top-flex">
             <h4 class=" ">EWEEK</h4>
             <div class="circle-num shadow">
@@ -114,7 +115,7 @@
             Reprehenderit ut voluptatem.
           </h5>
         </div>
-        <div class="strategy-item shadow">
+        <div class="strategy-item shadow" data-aos="flip-down">
           <div class="top-flex">
             <h4 class=" ">EWEEK</h4>
             <div class="circle-num shadow">
@@ -127,7 +128,7 @@
             Reprehenderit ut voluptatem.
           </h5>
         </div>
-        <div class="strategy-item shadow">
+        <div class="strategy-item shadow" data-aos="flip-up">
           <div class="top-flex">
             <h4 class=" ">EWEEK</h4>
             <div class="circle-num shadow">
@@ -150,7 +151,7 @@
       </div>
 
       <div class="results-box container shadow">
-        <div class="results-item shadow">
+        <div class="results-item shadow" data-aos="zoom-in-up">
           <div class="results-left">
             <div class="results-user">
               <img class="shadow" src="assets/UserPic.svg" alt="" />
@@ -167,7 +168,7 @@
             </h6>
           </div>
         </div>
-        <div class="results-item shadow">
+        <div class="results-item shadow" data-aos="zoom-in-up">
           <div class="results-left">
             <div class="results-user">
               <img class="shadow" src="assets/UserPic.svg" alt="" />
@@ -184,7 +185,7 @@
             </h6>
           </div>
         </div>
-        <div class="results-item shadow">
+        <div class="results-item shadow" data-aos="zoom-in-up">
           <div class="results-left">
             <div class="results-user">
               <img class="shadow" src="assets/UserPic.svg" alt="" />
@@ -201,7 +202,7 @@
             </h6>
           </div>
         </div>
-        <div class="results-item shadow">
+        <div class="results-item shadow" data-aos="zoom-in-up">
           <div class="results-left">
             <div class="results-user">
               <img class="shadow" src="assets/UserPic.svg" alt="" />
@@ -228,7 +229,7 @@
       </div>
 
       <div class="services-grid container">
-        <div class="services-item shadow">
+        <div class="services-item shadow" data-aos="fade-right">
           <h3 class=" ">Content Creation</h3>
           <hr />
           <h6 class=" ">
@@ -237,7 +238,7 @@
             voluptatem ipsa laudantium et. Ad perspiciatis nisi rem sunt.
           </h6>
         </div>
-        <div class="services-item shadow">
+        <div class="services-item shadow" data-aos="fade-right">
           <h3 class=" ">Content Creation</h3>
           <hr />
           <h6 class=" ">
@@ -246,7 +247,7 @@
             voluptatem ipsa laudantium et. Ad perspiciatis nisi rem sunt.
           </h6>
         </div>
-        <div class="services-item shadow">
+        <div class="services-item shadow" data-aos="fade-right">
           <h3 class=" ">Content Creation</h3>
           <hr />
           <h6 class=" ">
@@ -255,7 +256,7 @@
             voluptatem ipsa laudantium et. Ad perspiciatis nisi rem sunt.
           </h6>
         </div>
-        <div class="services-item shadow">
+        <div class="services-item shadow" data-aos="fade-right">
           <h3 class=" ">Content Creation</h3>
           <hr />
           <h6 class=" ">
@@ -264,7 +265,7 @@
             voluptatem ipsa laudantium et. Ad perspiciatis nisi rem sunt.
           </h6>
         </div>
-        <div class="services-item shadow">
+        <div class="services-item shadow" data-aos="fade-right">
           <h3 class=" ">Content Creation</h3>
           <hr />
           <h6 class=" ">
@@ -273,7 +274,7 @@
             voluptatem ipsa laudantium et. Ad perspiciatis nisi rem sunt.
           </h6>
         </div>
-        <div class="services-item shadow">
+        <div class="services-item shadow" data-aos="fade-right">
           <h3 class=" ">Content Creation</h3>
           <hr />
           <h6 class=" ">
@@ -285,7 +286,7 @@
       </div>
     </section>
 
-    <section id="four" class="faq-section">
+    <section id="four" class="faq-section" data-aos="fade-right">
       <div class="heading-wrapper">
         <h2 class="main-heading container">FAQ</h2>
         <img class="shadow" src="assets/Strikethrough.svg" alt="" />
@@ -457,8 +458,10 @@
               <button>Submit</button>
             </form>
             <div class="right-contact">
-              <h6>954-560-7452</h6>
-              <h6>management@onlygains.com</h6>
+              <a href="tel:123-456-7890"><h6>123-456-7890</h6></a>
+              <a href="mailto:management@onlygains.com"
+                ><h6>management@onlygains.com</h6></a
+              >
             </div>
           </div>
         </div>
@@ -477,8 +480,11 @@
 
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
+      AOS.init();
+
       ScrollReveal().reveal(".reveal1", { delay: 500 });
       ScrollReveal().reveal(".reveal2", { delay: 1000 });
       ScrollReveal().reveal(".heading-1", { delay: 2500 });

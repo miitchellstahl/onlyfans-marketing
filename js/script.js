@@ -2,6 +2,16 @@
 
 const scrollTop = document.querySelector("#scroll-to-top");
 
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 400) {
+    scrollTop.classList.remove("hidden");
+    scrollTop.classList.add("show");
+  } else {
+    scrollTop.classList.remove("show");
+    scrollTop.classList.add("hidden");
+  }
+});
+
 scrollTop.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });

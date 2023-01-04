@@ -9,6 +9,14 @@ a{
     text-decoration: none;
 }
 
+.hidden{
+    display: none;
+}
+
+.show{
+    display: fixed;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
   background-color: var(--primary);
@@ -515,6 +523,14 @@ svg{
     font-weight: 400;
 }
 
+.right-contact h6{
+    transition: 250ms ease;
+}
+
+.right-contact h6:hover{
+    color: var(--primary)
+}
+
 .footer-wrapper{
     display: flex;
     justify-content: space-between;
@@ -681,7 +697,7 @@ color: var(--light-blue);
 
     .contact-wrapper{
         flex-direction: column;
-        gap: 2rem;
+        gap: 5rem;
     }
 
 }
