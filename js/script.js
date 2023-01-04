@@ -1,4 +1,4 @@
-history.scrollRestoration = "manual";
+// history.scrollRestoration = "manual";
 
 //Scroll to top
 
