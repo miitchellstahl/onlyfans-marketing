@@ -3,6 +3,7 @@
 //Scroll to top
 
 const scrollTop = document.querySelector("#scroll-to-top");
+scrollTop.classList.add("hidden");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 400) {
