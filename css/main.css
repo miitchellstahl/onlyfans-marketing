@@ -84,6 +84,10 @@ body {
 
 
 .hero-call-top-action a{
+    display: inline;
+}
+
+.hero-call-top-action a{
 transition: 250ms ease;
 }
 .hero-call-top-action a:hover{
