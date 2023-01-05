@@ -43,7 +43,7 @@ function vanish() {
 
 let valueDisplays = document.querySelectorAll(".num");
 
-let interval = 4000;
+let interval = 2500;
 
 valueDisplays.forEach((valueDisplay) => {
   let startValue = 0;
