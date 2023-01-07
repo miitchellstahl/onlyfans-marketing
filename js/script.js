@@ -1,5 +1,69 @@
 // history.scrollRestoration = "manual";
 
+//Form
+
+let numName = 0;
+let numPhone = 0;
+
+let form = document.querySelector(".left-contact");
+let fullname = document.querySelector("#fullname");
+let phone = document.querySelector("#phone");
+
+form.addEventListener("submit", (e) => {
+  validateInputs();
+
+  if (numName == 0 && numPhone == 0) {
+    return;
+  }
+
+  e.preventDefault();
+});
+
+const setError = (element, message) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector(".error");
+
+  errorDisplay.innerText = message;
+  inputControl.classList.add("error");
+  inputControl.classList.remove("success");
+};
+const setSuccess = (element, message) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector(".error");
+
+  errorDisplay.innerText = "";
+  inputControl.classList.add("success");
+  inputControl.classList.remove("error");
+};
+
+const validateInputs = () => {
+  const nameValue = fullname.value.trim();
+  const phoneValue = phone.value.trim();
+
+  if (nameValue === "") {
+    setError(fullname, "Username is required");
+    numName = 1;
+  } else {
+    setSuccess(fullname);
+    numName = 0;
+  }
+  if (
+    phone.value.length == 0 ||
+    phone.value.length < 10 ||
+    phone.value.length > 10
+  ) {
+    setError(phone, "Invalid Number");
+    numPhone = 1;
+  }
+  if (!phone.value.match(/^[0-9]{10}$/)) {
+    setError(phone, "Invalid Number");
+    numPhone = 1;
+  } else {
+    setSuccess(phone);
+    numPhone = 0;
+  }
+};
+
 //Scroll to top
 
 const scrollTop = document.querySelector("#scroll-to-top");

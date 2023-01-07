@@ -597,6 +597,35 @@ font-size: 1rem;
 color: var(--light-blue);
 }
 
+.input-control{
+    display: flex;
+    flex-direction: column;
+}
+.input-control{
+    display: block;
+}
+.input-control input:focus{
+    outline: none;
+}
+
+.input-control.success input{
+    border-color: #09c273;
+    border-radius: 5px;
+}
+.input-control.error input{
+    border-color: #ff3860;
+    border-radius: 5px;
+}
+
+.input-control .error{
+    color: #ff3860;
+    font-size: 1rem;
+    margin-top: .5rem;
+    height: 13px;
+}
+
+
+
 @media only screen and (max-width: 1500px) {
     #arrow{
         height: 70%;

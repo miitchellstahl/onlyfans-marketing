@@ -483,19 +483,29 @@
 
         <div class="contact-content container">
           <div class="contact-wrapper" data-aos="fade-up">
-            <form class="left-contact" action="">
-              <input
-                type="text"
-                placeholder="Full Name"
-                name="name"
-                id="name"
-              />
-              <input
-                type="text"
-                placeholder="Phone #"
-                name="phone"
-                id="phone"
-              />
+            <form class="left-contact" action="" novalidate>
+              <div class="input-control">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  name="name"
+                  id="fullname"
+                  required
+                />
+                <div class="error"></div>
+              </div>
+
+              <div class="input-control">
+                <input
+                  type="tel"
+                  placeholder="Phone #"
+                  name="phone"
+                  id="phone"
+                  required
+                />
+                <div class="error"></div>
+              </div>
+
               <button>Submit</button>
             </form>
             <div class="right-contact">
