@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.container h3 {
+  margin-top: 2rem;
+}
+
+.container a {
+  margin-top: 2rem;
+  border: 3px solid #12141d;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  background: none;
+  color: #12141d;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 250ms ease;
+}
+
+.container a:hover {
+  background: #12141d;
+  color: var(--light-blue);
+}

@@ -58,6 +58,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="loader">
@@ -100,11 +105,11 @@
             </h1>
 
             <div class="hero-call-top-action">
-              <a href="#one" class=" ">
+              <a href="" class="explore-button">
                 <h5 id="explore">EXPLORE</h5>
                 <img class="chevron" src="assets/chevron.svg" alt="" />
               </a>
-              <a href="#five" class=" ">
+              <a href="" class="contact-button">
                 <h5 id="contact">CONTACT</h5>
                 <img class="chevron" src="assets/chevron.svg" alt="" />
               </a>
@@ -483,7 +488,18 @@
 
         <div class="contact-content container">
           <div class="contact-wrapper" data-aos="fade-up">
-            <form class="left-contact" action="" novalidate>
+            <form
+              class="left-contact"
+              action="https://formsubmit.co/c11e959fde5b75b2b9ebef8333548246"
+              novalidate
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_next"
+                value="https://onlygains.io/thanks.html"
+              />
+              <input type="hidden" name="_subject" value="New lead!" />
               <div class="input-control">
                 <input
                   type="text"
@@ -510,8 +526,8 @@
             </form>
             <div class="right-contact">
               <a href="tel:123-456-7890"><h6>123-456-7890</h6></a>
-              <a href="mailto:management@onlygains.com"
-                ><h6>management@onlygains.com</h6></a
+              <a href="mailto:management@onlygains.io"
+                ><h6>management@onlygains.io</h6></a
               >
             </div>
           </div>

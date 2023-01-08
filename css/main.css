@@ -83,8 +83,9 @@ body {
 }
 
 
+#could cause problem
 .hero-call-top-action a{
-    display: inline;
+    width: 30%;
 }
 
 .hero-call-top-action a{
@@ -195,11 +196,11 @@ transition: 250ms ease;
     background: var(--dark-primary);
     border-radius: 15px;
     padding: 1rem;
-    transition: 250ms ease-in-out;
+    transition: 250ms ease-in;
 }
 
 .results-item:hover{
-    opacity: .6;
+    background: #222637;
 }
 
 .results-item h2{
@@ -299,8 +300,6 @@ transition: 250ms ease;
 position: relative;
 margin-bottom: 12%;
 }
-
-
 
 .separator{
     position: absolute;
@@ -442,7 +441,7 @@ padding-top: 0;
 .answer{
     max-height: 0;
     overflow: hidden;
-    transition: 500ms ease;
+    transition: 250ms ease-in;
 }
 
 .faq.active .answer{

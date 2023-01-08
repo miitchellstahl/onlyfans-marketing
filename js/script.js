@@ -1,4 +1,23 @@
-// history.scrollRestoration = "manual";
+history.scrollRestoration = "manual";
+
+$(document).ready(function () {
+  $(".contact-button").on("click", function (e) {
+    var posTop = $("#five").offset().top; //Get the position of the element you want to scroll to
+    e.preventDefault();
+    e.stopPropagation();
+    $("html, body").scrollTop(posTop); //Scroll to that position
+    console.log(window.location);
+  });
+});
+$(document).ready(function () {
+  $(".explore-button").on("click", function (e) {
+    var posTop = $("#one").offset().top; //Get the position of the element you want to scroll to
+    e.preventDefault();
+    e.stopPropagation();
+    $("html, body").scrollTop(posTop); //Scroll to that position
+    console.log(window.location);
+  });
+});
 
 //Form
 
@@ -41,7 +60,7 @@ const validateInputs = () => {
   const phoneValue = phone.value.trim();
 
   if (nameValue === "") {
-    setError(fullname, "Username is required");
+    setError(fullname, "Name is required");
     numName = 1;
   } else {
     setSuccess(fullname);
