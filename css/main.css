@@ -233,6 +233,12 @@ transition: 250ms ease;
     gap: 1rem;
 }
 
+.results-user img{
+    border-radius: 50%;
+    height: auto;
+    width: 70px;
+}
+
 .services-grid{
     display: grid;
     gap: 5rem;
